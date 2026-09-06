@@ -29,6 +29,16 @@ Ahi ingresamos a:
 
 /code/CMSSW_10_6_30/src/Analisis/MyAnalyzer/python
 
+copiar el archivo y editarlo para correr sobre la señal de 2000
+
+sonic_parallel-signal1000.py
+
+la señal de 2000 se encuentra en
+
+/code
+
+
+
 
 
 
