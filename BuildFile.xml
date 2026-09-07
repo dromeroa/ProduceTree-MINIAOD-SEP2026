@@ -1,0 +1,40 @@
+<!-- BuildFile.xml  ---  MyAnalyzer v4
+     Cambios v3 -> v4:
+       [ACCION 3] Agregados JetMETCorrections/Modules y CommonTools/Utils
+                  para JME::JetResolution y JME::JetResolutionScaleFactor.
+-->
+
+<!-- ---- Framework CMSSW ------------------------------------------ -->
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="FWCore/ServiceRegistry"/>
+<use name="FWCore/Common"/>
+
+<!-- ---- Utilidades comunes --------------------------------------- -->
+<use name="CommonTools/UtilAlgos"/>
+<use name="CommonTools/Utils"/>
+
+<!-- ---- Objetos de datos ----------------------------------------- -->
+<use name="DataFormats/PatCandidates"/>
+<use name="DataFormats/Candidate"/>
+<use name="DataFormats/Common"/>
+<use name="DataFormats/JetReco"/>
+<use name="DataFormats/VertexReco"/>
+<use name="DataFormats/HepMCCandidate"/>
+<use name="SimDataFormats/PileupSummaryInfo"/>
+<use name="SimDataFormats/GeneratorProducts"/>
+<use name="DataFormats/Math"/>
+
+<!-- ---- JEC: JetCorrectorParameters + JetCorrectionUncertainty --- -->
+<use name="CondFormats/JetMETObjects"/>
+
+<!-- ---- [v5] FactorizedJetCorrector: cadena L1+L2+L3 para subjets -->
+
+<!-- ---- [ACCION 3] JER: JME::JetResolution + JetResolutionSF ---- -->
+<use name="JetMETCorrections/Modules"/>
+
+<!-- ---- CLHEP (math, random) ------------------------------------- -->
+<use name="clhep"/>
+
+<flags EDM_PLUGIN="1"/>
